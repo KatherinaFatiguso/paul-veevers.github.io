@@ -3,42 +3,327 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Coder Factory - Fast Track - Week 4</title>
+		<meta name="description" content="Coder Factory - Fast Track - Week 4">
+		<meta name="author" content="Paul Veevers">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 	</head>
+
 	<body>
-	
-		<h1></h1>
-		<p></p>
-		<a href=""></a>
-		<img src="" alt="">
-		<ul>
-			<li></li>
-		</ul>
+		<div class="reveal">
 
-		<br><br><br><br>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
 
-		<video src=""></video>
-		<header></header>
-		<footer></footer>
-		<article></article>
-		<small></small>
-		<strong></strong>
-		<code></code>
+				<section>
+					<h1>Coder Factory</h1>
+					<h3>Fast Track</h3>
+					<p>
+						<small>
+							Paul Veevers - veevers.paul@gmail.com - 0401957843
+						</small>
+					</p>
+				</section>
 
-		<br><br><br><br>
+				<section>
+					<h2>Who are we?</h2>
+				</section>
 
-		<a href=""></a>
-		<video src=""></video>
-		<input type="text">
-		<div id=""></div>
-		<span class=""></span>
+				<section>
+					<h2>Weekly Structure</h2>
+					<ol>
+						<li>Week 1: Static (HTML & CSS)</li>
+						<li>Week 2: Dynamic (JavaScript)</li>
+					</ol>
+				</section>
 
-		<br><br><br><br>
+				<section>
+					<h2>Week 1 - Content</h2>
+					<ol>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>SASS</li>
+						<li>Responsive + Frameworks</li>
+						<li>Build Tools</li>
+					</ol>
+				</section>
 
-		<form method="" action="">
-			<label for="name">Name:</label>
-			<input type="text" id="name">
-			<input type="submit" value="save">
-		</form>
+				<section>
+					<h2>Week 1 - Projects</h2>
+					<ul>
+						<li>Website replication with a twist</li>
+						<li>Sketch file replication</li>
+						<li>Fix the bug</li>
+						<li>Freelancer.com job</li>
+						<li>Personal website</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Daily Structure</h2>
+					<div><strong>10:00</strong> - revision</div>
+					<div><strong>10:30</strong> - lecture</div>
+					<div><strong>11:30</strong> - break</div>
+					<div><strong>11:45</strong> - lecture</div>
+					<div><strong>1:00</strong> - lunch</div>
+					<div><strong>2:00</strong> - project</div>
+					<div><strong>3:30</strong> - break</div>
+					<div><strong>4:30</strong> - demo & retro</div>
+					<div><strong>5:00</strong> - finish up</div>
+				</section>
+
+				<section>
+					<h2>Rules/Guidelines</h2>
+					<ul>
+						<li>Please interrupt me</li>
+						<li>Please give me feedback</li>
+						<li>Please tell me if something is boring</li>
+					</ul>
+					<br>
+					<p>Slides before class?</p>
+					<p>Other questions?</p>
+				</section>
+
+				<section>
+					<h3>Coder Factory - Fast Track</h3>
+					<h1>HTML</h1>
+					<h4>Week 4 - Day 1</h4>
+					<p>
+						<small>
+							Paul Veevers - veevers.paul@gmail.com - 0401957843
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Some tips before we begin</h2>
+					<ul>
+						<li>Google is your best friend</li>
+						<li>MDN > w3schools (AKA w3fools)</li>
+						<li>Stackoverflow</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>HyperText Markup Language</h2>
+
+					<q cite="http://en.wikipedia.org/wiki/HTML">
+						HTML is a markup language that web browsers use to interpret and compose text, images and other material into visual or audible web pages.
+					</q>
+					<br><br>
+					<ul>
+						<li>1990: Tim Berners-Lee (11/18 tags still exist)</li>
+						<li>1999: HTML 4.0</li>
+						<li>2014: HTML5</li>
+					</ul>
+				</section>
+
+				<section>
+					<pre><code contenteditable>
+						mkdir w4d1
+						ls
+						cd w4d1
+						touch lecture.html
+					</code></pre>
+					<br>
+					<p>Open index.html in Atom and Chrome</p>
+				</section>
+
+				<section>
+					<h2>HTML Tags</h2>
+					<p>
+						Everything in HTML is declared with tags. They're enclosed in angled brackets and come in pairs (there's an exception to every rule though).
+					</p>
+					<pre><code contenteditable>
+						<h1></h1>
+						<p></p>
+						<a href=""></a>
+						<img src="">
+						<ul>
+							<li></li>
+						</ul>
+					</code></pre>
+					<a target="_blank" href="https://developer.mozilla.org/en/docs/Web/HTML/Element">All tags</a>
+				</section>
+
+				<section>
+					<h2>Document Structure</h2>
+					<img src="html_head_body_image.png">
+					<p>What's an element?</p>
+					<p>& other terminology.</p>
+				</section>
+
+				<section>
+					<h2>Tags have default styles</h2>
+					<ul>
+						<li>div vs. span</li>
+						<li>h1 vs. p</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>HTML5 is semantic</h2>
+					<pre><code contenteditable>
+						<video src=""></video>
+						<header></header>
+						<footer></footer>
+						<article></article>
+						<small></small>
+						<strong></strong>
+						<code></code>
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>HTML Attributes</h2>
+					<p>Some are exclusive to a subset of tags, while others are global.</p>
+					<pre><code contenteditable>
+						<a href=""></a>
+						<video src=""></video>
+						<input type="text">
+						<div id=""></div>
+						<span class=""></span>
+					</code></pre>
+					<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">All attributes</a>
+				</section>
+
+				<section>
+					<h2>Forms (deep dive)</h2>
+					<pre><code contenteditable>
+						<form method="" action="">
+							<label for="name">Name:</label>
+							<input type="text" id="name">
+							<input type="submit" value="save">
+						</form>
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>HTML IS</h3>
+					<ul>
+						<li>Document structure</li>
+						<li>Document layout (to a certain extent)</li>
+						<li>(ugly)</li>
+					</ul>
+					<br><br>
+					<h3>HTML IS NOT</h3>
+					<ul>
+						<li>Styling</li>
+						<li>Dynamic</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How to divide a page into it's parts</h2>
+				</section>
+
+				<section>
+					<h2>Tools of the Trade</h2>
+					<ul>
+						<li>Chrome inspector</li>
+						<li>JSFiddle, etc</li>
+						<li>HTML lint</li>
+						<li>HTML5 boilerplate</li>
+						<li>Grunt</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Today's Project</h4>
+					<h2>Website replication with a twist</h2>
+					<ol>
+						<li> <a target="_blank" href="">Fork and clone this</a> (<a target="_blank" href="https://help.github.com/articles/fork-a-repo/">HELP</a>)</li>
+						<li> <a target="_blank" href="https://raw.githubusercontent.com/paul-veevers/paul-veevers.github.io/master/w4d1/stripe.png">Then replicate this</a> </li>
+					</ol>
+					<p>Remember to add, commit and push changes</p>
+				</section>
+
+				<section>
+					<h4>Today's Project</h4>
+					<h2>Website replication with a twist</h2>
+					<ol>
+						<li> <a target="_blank" href="">Fork and clone this</a> (<a target="_blank" href="https://help.github.com/articles/fork-a-repo/">HELP</a>) </li>
+						<li> <a target="_blank" href="https://raw.githubusercontent.com/paul-veevers/paul-veevers.github.io/master/w4d1/stripe.png">Then replicate this</a> </li>
+						<li> <a target="_blank" href="https://github.com/paul-veevers/paul-veevers.github.io/blob/master/w4d1/stripe.html">Now view this</a> </li>
+					</ol>
+					<p>Remember to add, commit and push changes</p>
+				</section>
+
+				<section>
+					<h2>Demos</h2>
+				</section>
+
+				<section>
+					<h2>Retro</h2>
+				</section>
+
+				<section>
+					<h2>Optional Homework</h2>
+					<ul>
+						<li>What are some reasons for always having an h1 tag on the page?</li>
+						<li>What are some reasons for always including the alt attribute on img tags?</li>
+						<li>Why should web pages be readable in pure html?</li>
+						<li>Advanced: what are the steps between the browser receiving the HTML to displaying it for the user?</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+				overview: true,
+
+				width: 1040,
+    			height: 700,
+				margin: 0.1,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
 
 	</body>
 </html>
