@@ -26,7 +26,7 @@ module.exports = function ( grunt ) {
      * This lints our html to make sure it's correct.
      */
     htmllint: {
-      all: ["stripe.html"]
+      all: ["index.html"]
     },
 
     /**
@@ -37,8 +37,8 @@ module.exports = function ( grunt ) {
       build: {
         files: [
           { 
-            src: 'stripe.html',
-            dest: 'build/stripe.html'
+            src: 'index.html',
+            dest: 'build/index.html'
           }
         ]   
       }
@@ -67,7 +67,7 @@ module.exports = function ( grunt ) {
        * When index.html changes, we need to lint and copy it.
        */
       html: {
-        files: [ 'stripe.html' ],
+        files: [ 'index.html' ],
         tasks: [ 'build' ]
       }
 

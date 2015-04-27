@@ -1,7 +1,7 @@
 {
   "author": "Coder Factory",
-  "name": "coder-factory-grunt-html",
-  "description": "The grunt file config for html project week 4 day 1.",
+  "name": "coder-factory-html-starter",
+  "description": "The html starter for week 4 day 1.",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
